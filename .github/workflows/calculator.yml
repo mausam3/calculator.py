@@ -1,6 +1,8 @@
 name: my-calculator
 on: push
 jobs:
- calculate:
-   - name: install calculator
-     run: python3 calculator.py
+ runs-on: ubuntu-latest
+  steps:
+   calculate:
+    - name: install calculator
+      run: python3 calculator.py
