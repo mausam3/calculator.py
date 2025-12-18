@@ -4,5 +4,7 @@ jobs:
  calculate:
   runs-on: ubuntu-latest
   steps:
-    - name: install calculator
-      run: python3 calculator.py
+   - name: copy code
+     uses: actions/checkout@v3
+   - name: install calculator
+     run: python3 calculator.py
